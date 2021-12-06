@@ -189,7 +189,10 @@ public enum Compound {
 
     public String getUnit() { return unit; }
     public String getDescription() { return description; }
+<<<<<<< Updated upstream
     public DoubleFunction getFunction(){return function;}
 
+=======
+>>>>>>> Stashed changes
 
 }
