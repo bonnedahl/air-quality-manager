@@ -1,14 +1,14 @@
-import java.util.concurrent.CopyOnWriteArrayList;
-
-public class Density extends Attribute {
+public class Density{
     
     // ..
-    private Compound compound;
-    private float value;
+    private final Compound compound;
+    private final float value;
+    private final double AQI;
 
     public Density(Compound compound, float value) {
         this.compound = compound;
         this.value = value;
+        this.AQI = (double) compound.getFunction().apply(value);
     }
 
     public Compound getCompound() {
@@ -18,4 +18,6 @@ public class Density extends Attribute {
     public float getValue() {
         return value;
     }
+
+    public double getAQI(){return AQI;}
 }
