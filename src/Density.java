@@ -1,5 +1,6 @@
 public class Density extends Attribute {
     
+    // ..
     private Compound compound;
     private float value;
 

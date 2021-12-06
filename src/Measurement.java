@@ -6,7 +6,7 @@ public class Measurement {
     private Sensor sensor;
     private Density[] values;
 
-    // We assume that a sensor always measures the 4 different gases at the same time
+    // We assume, that a sensor always measures the 4 different gases at the same time
 
     public Measurement(Date timestamp, Sensor sensor, Density[] values) {
         this.timestamp = timestamp;
