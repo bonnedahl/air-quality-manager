@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="01e4abbb-8e41-416d-bef0-aeee78ca35b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="21ihqxzlLziZdCTJM8wxyEUj7ne" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/out/production/AirQualityManager/resources" />
+      <recent name="$PROJECT_DIR$/out/production/AirQualityManager" />
+      <recent name="$PROJECT_DIR$/src/resources" />
+      <recent name="$PROJECT_DIR$/src/resources/" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AirQualityManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AirQualityManager" />
+      <module name="AirQualityManager" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AirQualityManager" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01e4abbb-8e41-416d-bef0-aeee78ca35b3" name="Changes" comment="" />
+      <created>1638430011604</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638430011604</updated>
+      <workItem from="1638430012652" duration="5009000" />
+      <workItem from="1638797997136" duration="4518000" />
+      <workItem from="1638828910498" duration="20000" />
+      <workItem from="1638887097998" duration="18479000" />
+    </task>
+    <task id="LOCAL−00001" summary="Changed JDK-version to 15.0.2 and added measurement">
+      <created>1638433251678</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1638433251678</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Added GasLabel but I don't know if we need it">
+      <created>1638435794941</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1638435794941</updated>
+    </task>
+    <task id="LOCAL−00003" summary="Added functionality do calculate AQI for each density-value">
+      <created>1638804088598</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1638804088598</updated>
+    </task>
+    <task id="LOCAL−00004" summary="Added functions for calculating AQI, taken from the source code of https://www.airnow.gov/aqi/aqi-calculator-concentration/">
+      <created>1638805363060</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1638805363061</updated>
+    </task>
+    <task id="LOCAL−00005" summary="Added out to gitignore">
+      <created>1638899833862</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1638899833864</updated>
+    </task>
+    <task id="LOCAL−00006" summary="Fixed CSV-parser, moved it to its own class and implemented GUI">
+      <created>1638919067483</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1638919067483</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added boiler plate code and all resources" />
+    <MESSAGE value="Changed JDK-version to 15.0.2 and added measurement" />
+    <MESSAGE value="Added GasLabel but I don't know if we need it" />
+    <MESSAGE value="Added functionality do calculate AQI for each density-value" />
+    <MESSAGE value="Added functions for calculating AQI, taken from the source code of https://www.airnow.gov/aqi/aqi-calculator-concentration/" />
+    <MESSAGE value="Added out to gitignore" />
+    <MESSAGE value="Fixed CSV-parser, moved it to its own class and implemented GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed CSV-parser, moved it to its own class and implemented GUI" />
+  </component>
+</project>
