@@ -83,7 +83,7 @@ public class View {
     }
 
     private JPanel buildDateSpanSelector(){
-        JPanel timeSelector = buildDateSpanSelector();
+        JPanel timeSelector = new JPanel();
 
         JSpinner fromSpinner = new JSpinner(new SpinnerDateModel());
         fromEditor = new DateEditor(fromSpinner, "yyyy:MM:dd'T'HH:mm:ss");

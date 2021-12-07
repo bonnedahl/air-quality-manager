@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01e4abbb-8e41-416d-bef0-aeee78ca35b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirQualityManager/AirQualityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirQualityManager/AirQualityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirQualityManager/Density.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirQualityManager/Density.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/out/production/AirQualityManager/resources" />
       <recent name="$PROJECT_DIR$/out/production/AirQualityManager" />
       <recent name="$PROJECT_DIR$/src/resources" />
-      <recent name="$PROJECT_DIR$/src/resources/" />
     </key>
   </component>
   <component name="RunManager">
@@ -79,7 +82,7 @@
       <workItem from="1638430012652" duration="5009000" />
       <workItem from="1638797997136" duration="4518000" />
       <workItem from="1638828910498" duration="20000" />
-      <workItem from="1638887097998" duration="18479000" />
+      <workItem from="1638887097998" duration="18862000" />
     </task>
     <task id="LOCAL−00001" summary="Changed JDK-version to 15.0.2 and added measurement">
       <created>1638433251678</created>
@@ -117,7 +120,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1638919067483</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="Merge branch 'main' of https://github.com/bonnedahl/air-quality-manager&#10;&#10;# Conflicts:&#10;#&#9;out/production/AirQualityManager/AirQualityManager.class&#10;#&#9;out/production/AirQualityManager/Density.class&#10;#&#9;src/Density.java">
+      <created>1638919532521</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1638919532521</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +151,7 @@
     <MESSAGE value="Added functions for calculating AQI, taken from the source code of https://www.airnow.gov/aqi/aqi-calculator-concentration/" />
     <MESSAGE value="Added out to gitignore" />
     <MESSAGE value="Fixed CSV-parser, moved it to its own class and implemented GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed CSV-parser, moved it to its own class and implemented GUI" />
+    <MESSAGE value="Merge branch 'main' of https://github.com/bonnedahl/air-quality-manager&#10;&#10;# Conflicts:&#10;#&#9;out/production/AirQualityManager/AirQualityManager.class&#10;#&#9;out/production/AirQualityManager/Density.class&#10;#&#9;src/Density.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'main' of https://github.com/bonnedahl/air-quality-manager&#10;&#10;# Conflicts:&#10;#&#9;out/production/AirQualityManager/AirQualityManager.class&#10;#&#9;out/production/AirQualityManager/Density.class&#10;#&#9;src/Density.java" />
   </component>
 </project>
