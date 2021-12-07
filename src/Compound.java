@@ -10,6 +10,7 @@ public enum Compound {
     private final String description;
     private final DoubleFunction function;
 
+
     private static double calcO3AQI(double v){
         double AQI;
         double c=(Math.floor(v))/1000;
