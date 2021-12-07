@@ -1,6 +1,7 @@
 public class AirQualityManager {
     // Main method
     public static void main(String[] args){
+<<<<<<< Updated upstream
        //SensorDataPoint measurement = new SensorDataPoint(GasLabel.NO2, ) ;
        //String test = Compound.O3.getUnit();
 
@@ -9,5 +10,9 @@ public class AirQualityManager {
         //View gui = new View(model);
         Density d = new Density(Compound.O3, 110);
         System.out.println(d.getAQI());
+=======
+
+
+>>>>>>> Stashed changes
     }
 }
