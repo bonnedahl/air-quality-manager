@@ -117,10 +117,6 @@ public enum Compound {
 
     public String getUnit() { return unit; }
     public String getDescription() { return description; }
-<<<<<<< HEAD
-=======
     public DoubleFunction getFunction(){return function;}
-
->>>>>>> 6c3286de4d6156be0608adc1b998e1f648745f6a
 
 }
