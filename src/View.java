@@ -1,6 +1,6 @@
-import java.awt.BorderLayout;
-import java.awt.Dimension;
+import java.awt.*;
 import java.awt.event.ItemEvent;
+import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -24,6 +24,7 @@ public class View {
     List<Measurement> measurements;
     private JFrame frame;
     private JTextArea output;
+    private static final DecimalFormat df = new DecimalFormat("0.00");
     JPanel allSensors;
     List<String> selectedSensors = new ArrayList<>();
     DateEditor fromEditor, toEditor;
@@ -40,9 +41,9 @@ public class View {
      * Builds and shows the GUI
      */
     private void buildGUI() {
-        frame = new JFrame("AirQualityManager");
-        frame.setSize(1100, 500);
-        frame.setMinimumSize(new Dimension(280, 200));
+        frame = new JFrame("Air Quality Manager - created by: The Ducks \uD83E\uDD86 \uD83E\uDD86 \uD83E\uDD86");
+        frame.setSize(950, 345);
+        frame.setMinimumSize(new Dimension(280, 360));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel contentPane = new JPanel(new BorderLayout());
@@ -62,11 +63,13 @@ public class View {
      *
      * @return The pre-built table-panel
      */
-    private JTextArea buildOutput() {
-        JTextArea output = new JTextArea("Choose a sensor to get started");
 
+    private JTextArea buildOutput() {
+        JTextArea output = new JTextArea("  Choose a sensor to get started");
+        output.setEditable(false);
         return output;
     }
+
 
     private JScrollPane buildSensorSelector(){
         allSensors = new JPanel();
@@ -74,7 +77,7 @@ public class View {
         JScrollPane scrollPane = new JScrollPane(allSensors);
 
         for (Sensor s : Sensor.values()) {
-            JCheckBox check = new JCheckBox(String.valueOf(s.getSensorID()));
+            JCheckBox check = new JCheckBox(String.valueOf(s) + "    located in: " + String.valueOf(s.getLocation()));
             check.addItemListener((ItemEvent e) -> toggleSensor(s.getSensorID(),
                 e.getStateChange() == ItemEvent.SELECTED));
             allSensors.add(check);
@@ -111,7 +114,7 @@ public class View {
 
     private JPanel buildPercentageSpanSelector(){
         JPanel percentageSpan = new JPanel();
-        JTextArea text1 = new JTextArea("How many measurements fall within ±");
+        JTextArea text1 = new JTextArea("How many measurements fall within ± \n from the average value?\"");
         text1.setEditable(false);
         percentageSpan.add(text1);
         percentageRate = new JTextField(2);
@@ -131,7 +134,7 @@ public class View {
             }
         });
         percentageSpan.add(percentageRate);
-        JTextArea text2 = new JTextArea("% from the average value?");
+        JTextArea text2 = new JTextArea("%");
         text2.setEditable(false);
         percentageSpan.add(text2);
         return percentageSpan;
@@ -224,9 +227,8 @@ public class View {
         outputText += PM10.getOutput();
 
         output.setText(outputText);
+        //OUTPUT HERE
     }
-
-
 
     class Average{
         float totalValue = 0;
@@ -255,9 +257,14 @@ public class View {
         }
 
         String getOutput(){
+
             String output = "";
-            output += "Average value for "+c.name()+": " + getAvgValue() +"\n";
-            output += "\tAverage Air Quality Index for "+c.name()+": " + getAvgAQI() +" which is " + Density.getAQILevel(getAvgAQI()) +"\n";
+            output += "  Average value for "+c.name()+": " + getAvgValue() +"\n";
+            output += "\tAverage Air Quality Index for "+c.name()+": " + df.format(getAvgAQI()) +" which is " +  Density.getAQILevel(getAvgAQI()) +"\n";
+
+
+
+
             if(isInt(percentageRate.getText())){
                 int range = Integer.valueOf(percentageRate.getText());
                 output += "\t"+rateWithinRange(range)*100+"% fall within the range of ±"+ range+"% from the average "+c.name()+" value\n";

@@ -17,11 +17,9 @@ public class Measurement {
     public Date getTimestamp() {
         return timestamp;
     }
-
     public Sensor getSensor() {
         return sensor;
     }
-
     public Density[] getValues() {
         return values;
     }

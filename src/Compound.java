@@ -10,7 +10,12 @@ public enum Compound {
     private final String description;
     private final DoubleFunction function;
 
-
+    Compound(String unit, String description, DoubleFunction m) {
+        this.unit = unit;
+        this.description = description;
+        this.function = m;
+    }
+    //Taken straight from the source code of https://www.airnow.gov/aqi/aqi-calculator-concentration/
     private static double calcO3AQI(double v){
         double AQI;
         double c=(Math.floor(v))/1000;
@@ -81,7 +86,6 @@ public enum Compound {
         return AQI;
     }
 
-    //Taken straight from the source code of https://www.airnow.gov/aqi/aqi-calculator-concentration/
     private static double calcPM10AQI(double v){
         double AQI;
         double c=Math.floor(v);
@@ -110,14 +114,8 @@ public enum Compound {
         return Math.round(a);
     }
 
-    Compound(String unit, String description, DoubleFunction m) {
-        this.unit = unit;
-        this.description = description;
-        this.function = m;
-    }
-
     public String getUnit() { return unit; }
     public String getDescription() { return description; }
-    public DoubleFunction getFunction(){return function;}
+    public DoubleFunction getFunction(){ return function;}
 
 }

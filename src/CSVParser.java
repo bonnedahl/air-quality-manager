@@ -10,6 +10,9 @@ public class CSVParser {
     public CSVParser(String filename){
         measurements = extractMeasurements(filename);
     }
+    public List<Measurement> getMeasurements() {
+        return measurements;
+    }
 
     // CSV Parser
     private static List<Measurement> extractMeasurements(String filename) {
@@ -40,9 +43,5 @@ public class CSVParser {
             }
         } catch(Exception e){}
         return res;
-    }
-
-    public List<Measurement> getMeasurements() {
-        return measurements;
     }
 }
