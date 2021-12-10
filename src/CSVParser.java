@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class CSVParser {
@@ -37,7 +38,9 @@ public class CSVParser {
                 densities[(i-2)%4] = new Density(Compound.valueOf(parts[2]), Float.parseFloat(parts[3]));
                 // We construct a measurement object at every 4th row
                 if((i-1)%4 == 0) {
-                    res.add(new Measurement(dateFormat.parse(parts[0]), Sensor.valueOf(parts[1]), densities));
+                    Calendar c = Calendar.getInstance();
+                    c.setTime(dateFormat.parse(parts[0]));
+                    res.add(new Measurement(c, Sensor.valueOf(parts[1]), densities));
                     densities = new Density[4];
                 }
             }
