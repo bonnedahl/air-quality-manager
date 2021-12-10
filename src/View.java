@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
+import java.util.Calendar;
 import java.util.List;
 import javax.swing.BoxLayout;
 import javax.swing.JCheckBox;
@@ -89,14 +89,14 @@ public class View {
         JPanel timeSelector = new JPanel();
 
         JSpinner fromSpinner = new JSpinner(new SpinnerDateModel());
-        fromEditor = new DateEditor(fromSpinner, "yyyy:MM:dd'T'HH:mm:ss");
+        fromEditor = new DateEditor(fromSpinner, "yyyy:MM:dd HH:mm:ss");
         fromSpinner.setEditor(fromEditor);
 
 
         timeSelector.add(fromSpinner);
 
         JSpinner toSpinner = new JSpinner(new SpinnerDateModel());
-        toEditor = new DateEditor(toSpinner, "yyyy:MM:dd'T'HH:mm:ss");
+        toEditor = new DateEditor(toSpinner, "yyyy:MM:dd HH:mm:ss");
         toSpinner.setEditor(toEditor);
 
         try {
@@ -114,7 +114,7 @@ public class View {
 
     private JPanel buildPercentageSpanSelector(){
         JPanel percentageSpan = new JPanel();
-        JTextArea text1 = new JTextArea("How many measurements fall within ± \n from the average value?\"");
+        JTextArea text1 = new JTextArea("How many measurements fall within ± \n from the average value?");
         text1.setEditable(false);
         percentageSpan.add(text1);
         percentageRate = new JTextField(2);
@@ -179,8 +179,10 @@ public class View {
 
     private void updateOutput(){
         String outputText = "";
-        Date fromDate = fromEditor.getModel().getDate();
-        Date toDate = toEditor.getModel().getDate();
+        Calendar fromDate = Calendar.getInstance();
+        fromDate.setTime(fromEditor.getModel().getDate());
+        Calendar toDate = Calendar.getInstance();
+        toDate.setTime(toEditor.getModel().getDate());
         if(selectedSensors.size() == 0){
             output.setText("Choose a sensor to get started");
             return;
@@ -259,15 +261,12 @@ public class View {
         String getOutput(){
 
             String output = "";
-            output += "  Average value for "+c.name()+": " + getAvgValue() +"\n";
-            output += "\tAverage Air Quality Index for "+c.name()+": " + df.format(getAvgAQI()) +" which is " +  Density.getAQILevel(getAvgAQI()) +"\n";
-
-
-
+            output += "  Average value for "+c.name() + " ("+c.getDescription()+"): " +df.format(getAvgValue())+" " + this.c.getUnit() +"\n";
+            output += "\tAverage Air Quality Index for "+c.name()+": " + df.format(getAvgAQI())+ " which is " +  Density.getAQILevel(getAvgAQI()) +"\n";
 
             if(isInt(percentageRate.getText())){
                 int range = Integer.valueOf(percentageRate.getText());
-                output += "\t"+rateWithinRange(range)*100+"% fall within the range of ±"+ range+"% from the average "+c.name()+" value\n";
+                output += "\t"+df.format(rateWithinRange(range)*100)+"% fall within the range of ±"+ range+"% from the average "+c.name()+" value\n";
             }
             output += "\n";
             return output;

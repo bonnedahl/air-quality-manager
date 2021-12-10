@@ -8,20 +8,20 @@ import java.util.List;
 
 public class CSVParser {
     List<Measurement> measurements;
-    public CSVParser(String filename){
-        measurements = extractMeasurements(filename);
+    public CSVParser(FileReader fileReader){
+        measurements = extractMeasurements(fileReader);
     }
     public List<Measurement> getMeasurements() {
         return measurements;
     }
 
     // CSV Parser
-    private static List<Measurement> extractMeasurements(String filename) {
+    private static List<Measurement> extractMeasurements(FileReader fileReader) {
         int i = 0;
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         List<Measurement> res = new ArrayList<Measurement>();
         List<String> test = new ArrayList<>();
-        try (CSVReader reader = new CSVReader(new FileReader(filename, Charset.forName("utf-16")))) {
+        try (CSVReader reader = new CSVReader(fileReader)) {
             String[] line;
             Density[] densities = new Density[4];
             while ((line = reader.readNext()) != null) {

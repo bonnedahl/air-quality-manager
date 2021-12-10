@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="AirQualityManager:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="01e4abbb-8e41-416d-bef0-aeee78ca35b3" name="Changes" comment="" />
+    <list default="true" id="01e4abbb-8e41-416d-bef0-aeee78ca35b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/AirQualityManager_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirQualityManager/AirQualityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirQualityManager/AirQualityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirQualityManager/Compound.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirQualityManager/Compound.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirQualityManager/Measurement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirQualityManager/Measurement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirQualityManager/resources/AttributeType.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirQualityManager/resources/AttributeType.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirQualityManager/resources/Sensors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirQualityManager/resources/Sensors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirQualityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirQualityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSVParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,10 +59,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
@@ -90,6 +109,7 @@
       <workItem from="1638797997136" duration="4518000" />
       <workItem from="1638828910498" duration="20000" />
       <workItem from="1638887097998" duration="18862000" />
+      <workItem from="1639098321852" duration="2332000" />
     </task>
     <task id="LOCAL−00001" summary="Changed JDK-version to 15.0.2 and added measurement">
       <created>1638433251678</created>
